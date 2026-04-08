@@ -55,12 +55,12 @@ namespace OPCUATestClient
                 uint sessionTimeout = 60000;
 
                 string password = "YOUR_PASSWORD";
-                byte[] bytePasseord = Encoding.UTF8.GetBytes(password);
+                byte[] bytePassword = Encoding.UTF8.GetBytes(password);
 
                 // The identity of the user attempting to connect. This can be anonymous as is used here,
                 // or can be specified by a variety of means, including username and password, certificate,
                 // or token.
-                var userIdentity = new UserIdentity("YOUR_USERNAME", bytePasseord);
+                var userIdentity = new UserIdentity("YOUR_USERNAME", bytePassword);
 
                 // List of preferred locales
                 List<string> preferredLocales = null;
